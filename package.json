@@ -20,6 +20,7 @@
   },
   "dependencies": {
     "bootstrap-icons": "^1.10.2",
-    "canvas-confetti": "^1.6.0"
+    "canvas-confetti": "^1.6.0",
+    "vercel": "^28.10.1"
   }
 }

@@ -49,7 +49,7 @@
 </main>
 <footer>
   <p>
-    This App is highly inspired but not associated to
+    This App is highly inspired by but not associated to
     <a rel="noreferrer" target="_blank" href="https://worldle.teuteuf.fr/"
       >Worldle</a
     >
