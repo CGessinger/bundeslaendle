@@ -1,0 +1,205 @@
+{
+    "states": [
+        {
+            "name": "Thüringen",
+            "latitude": "50.983333",
+            "longitude": "11.033333",
+            "capital": "Erfurt",
+            "population": "2.2",
+            "neighbors": [
+                "Sachsen",
+                "Sachsen-Anhalt",
+                "Niedersachsen",
+                "Hessen",
+                "Bayern"
+            ]
+        },
+        {
+            "name": "Sachsen",
+            "latitude": "51.333333",
+            "longitude": "12.383333",
+            "capital": "Dresden",
+            "population": "4.1",
+            "neighbors": [
+                "Sachsen-Anhalt",
+                "Brandenburg",
+                "Thüringen",
+                "Bayern"
+            ]
+        },
+        {
+            "name": "Sachsen-Anhalt",
+            "latitude": "51.966667",
+            "longitude": "11.966667",
+            "capital": "Magdeburg",
+            "population": "2.2",
+            "neighbors": [
+                "Brandenburg",
+                "Niedersachsen",
+                "Sachsen",
+                "Thüringen"
+            ]
+        },
+        {
+            "name": "Brandenburg",
+            "latitude": "52.416667",
+            "longitude": "13.033333",
+            "capital": "Potsdam",
+            "population": "3.5",
+            "neighbors": [
+                "Sachsen-Anhalt",
+                "Sachsen",
+                "Niedersachsen",
+                "Mecklenburg-Vorpommern"
+            ]
+        },
+        {
+            "name": "Mecklenburg-Vorpommern",
+            "latitude": "53.633333",
+            "longitude": "11.416667",
+            "capital": "Schwerin",
+            "population": "1.6",
+            "neighbors": [
+                "Brandenburg",
+                "Niedersachsen",
+                "Schleswig-Holstein"
+            ]
+        },
+        {
+            "name": "Niedersachsen",
+            "latitude": "52.636703",
+            "longitude": "9.845077",
+            "capital": "Hannover",
+            "population": "7.9",
+            "neighbors": [
+                "Sachsen-Anhalt",
+                "Brandenburg",
+                "Mecklenburg-Vorpommern",
+                "Schleswig-Holstein",
+                "Hamburg",
+                "Bremen",
+                "Nordrhein-Westfalen",
+                "Hessen",
+                "Thüringen"
+            ]
+        },
+        {
+            "name": "Hamburg",
+            "latitude": "53.55",
+            "longitude": "10",
+            "capital": "Hamburg",
+            "population": "1.8",
+            "neighbors": [
+                "Schleswig-Holstein",
+                "Niedersachsen"
+            ]
+        },
+        {
+            "name": "Bremen",
+            "latitude": "53.083333",
+            "longitude": "8.8",
+            "capital": "Bremen",
+            "population": "0.7",
+            "neighbors": [
+                "Niedersachsen"
+            ]
+        },
+        {
+            "name": "Schleswig-Holstein",
+            "latitude": "54.316667",
+            "longitude": "9.5",
+            "capital": "Kiel",
+            "population": "2.9",
+            "neighbors": [
+                "Mecklenburg-Vorpommern",
+                "Niedersachsen",
+                "Hamburg"
+            ]
+        },
+        {
+            "name": "Nordrhein-Westfalen",
+            "latitude": "51.45",
+            "longitude": "8.53",
+            "capital": "Düsseldorf",
+            "population": "17.8",
+            "neighbors": [
+                "Niedersachsen",
+                "Hessen",
+                "Rheinland-Pfalz"
+            ]
+        },
+        {
+            "name": "Hessen",
+            "latitude": "50.833333",
+            "longitude": "9.5",
+            "capital": "Wiesbaden",
+            "population": "6.2",
+            "neighbors": [
+                "Niedersachsen",
+                "Thüringen",
+                "Bayern",
+                "Nordrhein-Westfalen",
+                "Rheinland-Pfalz",
+                "Baden-Württemberg"
+            ]
+        },
+        {
+            "name": "Rheinland-Pfalz",
+            "latitude": "49.983333",
+            "longitude": "8.2732",
+            "capital": "Mainz",
+            "population": "4.1",
+            "neighbors": [
+                "Nordrhein-Westfalen",
+                "Hessen",
+                "Baden-Württemberg",
+                "Saarland"
+            ]
+        },
+        {
+            "name": "Baden-Württemberg",
+            "latitude": "48.766667",
+            "longitude": "8.4",
+            "capital": "Stuttgart",
+            "population": "10.8",
+            "neighbors": [
+                "Bayern",
+                "Hessen",
+                "Rheinland-Pfalz"
+            ]
+        },
+        {
+            "name": "Bayern",
+            "latitude": "48.133333",
+            "longitude": "11",
+            "capital": "München",
+            "population": "12.6",
+            "neighbors": [
+                "Sachsen",
+                "Thüringen",
+                "Hessen",
+                "Baden-Württemberg"
+            ]
+        },
+        {
+            "name": "Saarland",
+            "latitude": "49.233333",
+            "longitude": "6.966667",
+            "capital": "Saarbrücken",
+            "population": "0.9",
+            "neighbors": [
+                "Rheinland-Pfalz"
+            ]
+        },
+        {
+            "name": "Berlin",
+            "latitude": "52.523403",
+            "longitude": "13.411400",
+            "capital": "Berlin",
+            "population": "3.5",
+            "neighbors": [
+                "Brandenburg"
+            ]
+        }
+    ]
+}
