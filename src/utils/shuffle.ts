@@ -1,8 +1,12 @@
-export default function shuffle<Type>(array: Type[], seed): Type[] {
+const date = new Date();
+
+export const seed = date.getFullYear() * 1000 + date.getMonth() * 10 + (date.getDate() % 16);
+
+export default function shuffle<Type>(array: Type[]): Type[] {
     let currentIndex = array.length, temporaryValue, randomIndex;
-    seed = seed || 1;
-    let random = function () {
-        var x = Math.sin(seed++) * 10000;
+    let s = seed;
+    let random = function() {
+        var x = Math.sin(s++) * 10000;
         return x - Math.floor(x);
     };
     // While there remain elements to shuffle...

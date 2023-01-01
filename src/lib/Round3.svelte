@@ -1,6 +1,8 @@
 <script lang="ts">
     import { onMount } from "svelte";
+    import { cloneDeep } from "lodash";
     import * as utils from "../utils/utils";
+    import shuffle from "../utils/shuffle";
 
     export let states = [];
     export let stateToday;
@@ -25,13 +27,18 @@
         }
     });
 
-    function getChoices(): any[] {
+    function getChoices(): typeof stateToday[] {
         const choices = [];
-        const stateIndex = states.findIndex((s) => s.name == stateToday.name);
-        for (let i = 0; i < maxFlags; i++) {
-            const state = states[(stateIndex + i) % states.length];
-            choices.push(state);
+        choices.push(stateToday);
+        const allStates = cloneDeep(states) as typeof states;
+        const solutionIndex = allStates.indexOf(stateToday);
+        allStates.slice(solutionIndex, 1);
+
+        const shuffledStates = shuffle(allStates);
+        for (let i = 0; i < 3; i++) {
+            choices.push(shuffledStates[i]);
         }
+
         return choices;
     }
 

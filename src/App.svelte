@@ -9,7 +9,6 @@
   import Round3 from "./lib/Round3.svelte";
 
   const date = new Date();
-  const seed = date.getMonth() + date.getFullYear() * 100;
 
   const reset = () => {
     localStorage.clear();
@@ -26,7 +25,7 @@
     reset();
   }
 
-  const states = shuffle(statesJson.states, seed);
+  const states = shuffle(statesJson.states);
   const stateToday = states[date.getDate() % 16];
   const cities = citiesJson.cities;
 
