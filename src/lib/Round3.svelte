@@ -1,6 +1,5 @@
 <script lang="ts">
     import { onMount } from "svelte";
-    import { cloneDeep } from "lodash";
     import * as utils from "../utils/utils";
     import shuffle from "../utils/shuffle";
 
@@ -28,18 +27,17 @@
     });
 
     function getChoices(): typeof stateToday[] {
-        const choices = [];
-        choices.push(stateToday);
-        const allStates = cloneDeep(states) as typeof states;
-        const solutionIndex = allStates.indexOf(stateToday);
-        allStates.slice(solutionIndex, 1);
+        const indizes = Array.from(states.keys());
+        const solutionIndex = states.indexOf(stateToday);
+        indizes.slice(solutionIndex, 1);
+        const choices = [solutionIndex];
 
-        const shuffledStates = shuffle(allStates);
+        const shuffledIndizes = shuffle(indizes);
         for (let i = 0; i < 3; i++) {
-            choices.push(shuffledStates[i]);
+            choices.push(shuffledIndizes[i]);
         }
 
-        return choices;
+        return choices.map((i) => states[i]);
     }
 
     function guessFlag(guessedName) {
